@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richlam Ventures Limited | Network & Digital Infrastructure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="img/logo.png" alt="Richlam Ventures Logo">
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <nav id="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn-outline">Request Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Powering Businesses Through Secure Network Infrastructure & Intelligent Systems</h1>
+    <p>
+      Richlam Ventures Limited delivers enterprise-grade networking solutions
+      and modern digital automation systems designed to strengthen and scale your operations.
+    </p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn-primary">Our Services</a>
+      <a href="#contact" class="btn-secondary">Get a Proposal</a>
+    </div>
+  </div>
+</section>
+
+<section class="section fade-section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>Comprehensive infrastructure and digital solutions tailored for modern enterprises.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Network Architecture</h3>
+        <p>LAN/WAN deployment, structured cabling, router configuration, and scalable enterprise network systems.</p>
+      </div>
+
+      <div class="card">
+        <h3>Security & Surveillance</h3>
+        <p>CCTV installation, firewall configuration, access control systems, and network security implementation.</p>
+      </div>
+
+      <div class="card">
+        <h3>IT Support & Infrastructure</h3>
+        <p>Server setup, hardware installation, systems integration, and proactive IT maintenance services.</p>
+      </div>
+
+      <div class="card">
+        <h3>Automation & Software Solutions</h3>
+        <p>Custom websites, workflow automation, AI integrations, and business process optimization systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-section fade-section" id="about">
+  <div class="container about">
+    <h2>About Richlam Ventures Limited</h2>
+    <p>
+      Richlam Ventures Limited is built on a foundation of technical expertise and operational excellence.
+      With years of experience in network infrastructure and IT systems deployment, we have expanded
+      into delivering modern automation and intelligent digital solutions that empower businesses to thrive.
+    </p>
+    <p>
+      Our commitment is to provide secure, scalable, and future-ready technology systems that drive performance.
+    </p>
+  </div>
+</section>
+
+<section class="section stats fade-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Track Record</h2>
+      <p>Delivering measurable impact through secure and scalable systems.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>10+</h3>
+        <p>Years of Technical Experience</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>50+</h3>
+        <p>Projects Successfully Delivered</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>99%</h3>
+        <p>Client Satisfaction Rate</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section fade-section" id="contact">
+  <div class="container contact">
+    <h2>Let’s Strengthen Your Infrastructure</h2>
+    <p>Partner with Richlam Ventures Limited to build secure and scalable systems.</p>
+
+    <div class="contact-info">
+      <div>Email: info@richlamventures.com</div>
+      <div>Phone: +234 802 596 2400</div>
+      <div>Location: Lagos, Nigeria</div>
+    </div>
+
+    <a href="mailto:info@richlamventures.com" class="btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Richlam Ventures Limited. All rights reserved.
+</footer>
+
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  document.querySelectorAll(".fade-section").forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+
+</body>
+</html>
